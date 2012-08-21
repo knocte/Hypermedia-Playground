@@ -75,7 +75,7 @@
         /// Mvc project and is marked as Explicit because it changes the database.
         /// </summary>
         [Test]
-        [Explicit]
+		[Explicit("Creates/Updates database schema.")]
         public void CanCreateDatabase()
         {
             new SchemaExport(this.configuration).Execute(false, true, false);

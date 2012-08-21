@@ -1,4 +1,6 @@
-﻿namespace SharpRestFulie.Web.Mvc
+﻿using Restfulie.Server.Configuration;
+
+namespace SharpRestFulie.Web.Mvc
 {
     using System;
     using System.Reflection;
@@ -76,6 +78,11 @@
             ModelValidatorProviders.Providers.Add(new ClientDataTypeModelValidatorProvider());
 
             this.InitializeServiceLocator();
+
+
+
+			//var restfulieConfiguration = ConfigurationStore.Get();
+			//restfulieConfiguration.SetDefaultMediaType<>();
 
             AreaRegistration.RegisterAllAreas();
             RouteRegistrar.RegisterRoutesTo(RouteTable.Routes);
