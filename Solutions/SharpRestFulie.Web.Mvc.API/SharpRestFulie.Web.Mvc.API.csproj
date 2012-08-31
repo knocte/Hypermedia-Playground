@@ -156,8 +156,6 @@
     <Compile Include="Controllers\BasketsController.cs" />
     <Compile Include="Resources\TrackResource.cs" />
     <Compile Include="Controllers\TracksController.cs" />
-    <Compile Include="Resources\ItemResource.cs" />
-    <Compile Include="Controllers\ItemsController.cs" />
     <Compile Include="Controllers\RouteRegistrar.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,10 +205,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Items\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
