@@ -58,3 +58,34 @@ Usage:
 				
 			Get Receipt
 				curl http://sharprestfulie.local/payments/1 -H "Accept: application/json"
+				
+	SQL for inserting some sample tracks:
+		INSERT INTO [SharpRestFulie].[dbo].[Tracks]
+				   ([Name]
+				   ,[Description]
+				   ,[Price])
+			 VALUES
+				   ('Great track 1',
+				   'Some great track 1...',
+				   0.99)
+		GO 
+
+		INSERT INTO [SharpRestFulie].[dbo].[Tracks]
+				   ([Name]
+				   ,[Description]
+				   ,[Price])
+			 VALUES
+				   ('Great track 2',
+				   'Some great track 2...',
+				   0.99)
+		GO
+
+		INSERT INTO [SharpRestFulie].[dbo].[Tracks]
+				   ([Name]
+				   ,[Description]
+				   ,[Price])
+			 VALUES
+				   ('Great track 3',
+				   'Some great track 3...',
+				   0.2)
+		GO	
