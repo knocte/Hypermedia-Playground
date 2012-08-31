@@ -153,6 +153,7 @@
     </Compile>
     <Compile Include="CastleWindsor\ComponentRegistrar.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Resources\ItemResource.cs" />
     <Compile Include="Controllers\ItemsController.cs" />
     <Compile Include="Controllers\RouteRegistrar.cs" />
     <Compile Include="Global.asax.cs">

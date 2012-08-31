@@ -10,6 +10,26 @@
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*/)?favicon.ico(/.*)?" });
 
+			routes.MapRoute(
+						   "Get",
+						   "{controller}/{id}",
+						   new { action = "Get" },
+						   new
+						   {
+							   id = @"\d+"
+						   }
+						   );
+
+			routes.MapRoute(
+				"Save",
+				"{controller}/",
+				new { action = "Save" },
+				new
+				{
+					httpMethod = new HttpMethodConstraint("POST")
+				}
+				);
+
             routes.MapRoute(
                 "Default",                                              // Route name
                 "{controller}/{action}/{id}",                           // URL with parameters
