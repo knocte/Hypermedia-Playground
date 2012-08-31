@@ -44,10 +44,17 @@ Usage:
 
 		Basket
 			Create
-				curl -d "" http://sharprestfulie.local/baskets/create -H "Accept: application/json"
+				curl -d "" http://sharprestfulie.local/baskets -H "Accept: application/json"
 			
 			Get 
 				curl http://sharprestfulie.local/baskets/1 -H "Accept: application/json"
 				
 			Add Track
-				curl -X POST -d "{\"trackId\":1}" http://sharprestfulie.local/Baskets/1/Update -H "Content-Type: application/json" -H "Accept: application/json"
+				curl -X POST -d "{\"trackId\":1}" http://sharprestfulie.local/baskets/1/Update -H "Content-Type: application/json" -H "Accept: application/json"
+
+		Payments
+			Submit
+				curl -X POST -d "{\"basketId\":1}" http://sharprestfulie.local/payments -H "Content-Type: application/json" -H "Accept: application/json"
+				
+			Get Receipt
+				curl http://sharprestfulie.local/payments/1 -H "Accept: application/json"

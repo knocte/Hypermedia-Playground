@@ -152,9 +152,11 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="CastleWindsor\ComponentRegistrar.cs" />
-    <Compile Include="Resources\BasketResource.cs" />
+    <Compile Include="Controllers\Resources\PaymentResource.cs" />
+    <Compile Include="Controllers\Resources\BasketResource.cs" />
     <Compile Include="Controllers\BasketsController.cs" />
-    <Compile Include="Resources\TrackResource.cs" />
+    <Compile Include="Controllers\PaymentsController.cs" />
+    <Compile Include="Controllers\Resources\TrackResource.cs" />
     <Compile Include="Controllers\TracksController.cs" />
     <Compile Include="Controllers\RouteRegistrar.cs" />
     <Compile Include="Global.asax.cs">
@@ -201,7 +203,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\Queries\" />
-    <Folder Include="Controllers\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

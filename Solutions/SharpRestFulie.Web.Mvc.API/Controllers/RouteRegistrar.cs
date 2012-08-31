@@ -20,7 +20,7 @@
 							new { action = "Save" },
 							new { httpMethod = new HttpMethodConstraint("POST") });
 
-			routes.MapRoute("addtracktobasket", "{controller}/{id}/{action}/{trackId}",
+			routes.MapRoute("AddTrackToBasket", "{controller}/{id}/{action}/{trackId}",
         	                new {controller = "baskets", action = "update", id = @"\d+", trackId = @"\d+"},
 							new { httpMethod = new HttpMethodConstraint("POST") });
 

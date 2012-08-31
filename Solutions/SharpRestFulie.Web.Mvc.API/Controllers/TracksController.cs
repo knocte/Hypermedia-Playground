@@ -6,7 +6,7 @@ using Restfulie.Server.Results;
 using SharpArch.Domain.PersistenceSupport;
 using SharpArch.NHibernate;
 using SharpRestFulie.Domain;
-using SharpRestFulie.Web.Mvc.Resources;
+using SharpRestFulie.Web.Mvc.Controllers.Resources;
 
 namespace SharpRestFulie.Web.Mvc.Controllers
 {
@@ -38,7 +38,9 @@ namespace SharpRestFulie.Web.Mvc.Controllers
 				{
 					indexTrackResources.Add(new TrackResource(track.Id)
 											{
-												Name = track.Name
+												Name = track.Name,
+												Description = track.Description,
+												Price = track.Price
 											});
 				}
 			}
@@ -71,7 +73,8 @@ namespace SharpRestFulie.Web.Mvc.Controllers
 			var trackResource = new TrackResource(track.Id)
 											{
 												Name = track.Name,
-												Description = track.Description
+												Description = track.Description,
+												Price = track.Price
 											};
 
 			return new OK(trackResource);

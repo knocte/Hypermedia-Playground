@@ -6,7 +6,7 @@ using Restfulie.Server.Results;
 using SharpArch.Domain.PersistenceSupport;
 using SharpArch.NHibernate;
 using SharpRestFulie.Domain;
-using SharpRestFulie.Web.Mvc.Resources;
+using SharpRestFulie.Web.Mvc.Controllers.Resources;
 
 namespace SharpRestFulie.Web.Mvc.Controllers
 {
@@ -42,13 +42,14 @@ namespace SharpRestFulie.Web.Mvc.Controllers
 				foreach (var basketTrack in basket.Tracks)
 				{
 					trackResources.Add(new TrackResource(basketTrack.Id)
-					{
-						Name = basketTrack.Name,
-						Description = basketTrack.Description
-					});
+											{
+												Name = basketTrack.Name,
+												Description = basketTrack.Description,
+												Price = basketTrack.Price
+											});
 				}
 
-				basketResource = new BasketResource(trackResources);
+				basketResource = new BasketResource(basket.Id, trackResources);
 			}
 			catch (Exception exception)
 			{
@@ -61,7 +62,7 @@ namespace SharpRestFulie.Web.Mvc.Controllers
 
 
 		[AcceptVerbs(HttpVerbs.Post)]
-		public virtual ActionResult Create()
+		public virtual ActionResult Save()
 		{
 			Basket basket;
 

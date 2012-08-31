@@ -6,5 +6,6 @@ namespace SharpRestFulie.Domain
 	{
 		public virtual string Name { get; set; }
 		public virtual string Description { get; set; }
+		public virtual double Price { get; set; }
 	}
 }

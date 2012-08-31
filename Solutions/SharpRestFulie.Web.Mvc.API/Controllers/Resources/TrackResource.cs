@@ -1,17 +1,13 @@
 using Restfulie.Server;
-using SharpRestFulie.Web.Mvc.Controllers;
 
-namespace SharpRestFulie.Web.Mvc.Resources
+namespace SharpRestFulie.Web.Mvc.Controllers.Resources
 {
 	public class TrackResource : IBehaveAsResource
 	{
 		private readonly int _id;
 		public string Name { get; set; }
 		public string Description { get; set; }
-
-		public TrackResource() : this(int.MinValue)
-		{
-		}
+		public double Price { get; set; }
 
 		public TrackResource(int id)
 		{
@@ -20,11 +16,8 @@ namespace SharpRestFulie.Web.Mvc.Resources
 
 		public void SetRelations(Relations relations)
 		{
-			if (_id > int.MinValue)
-			{
-				relations.Named("self").Uses<TracksController>().Get(_id);
-				relations.Named("add to basket").At("http://sharprestfulie.local/Baskets/{BasketId}/Add");
-			}
+			relations.Named("self").Uses<TracksController>().Get(_id);
+			relations.Named("add to basket").At("http://sharprestfulie.local/Baskets/{BasketId}/Add");
 
 			relations.Named("list").Uses<TracksController>().Index();
 		}
