@@ -99,7 +99,7 @@ namespace SharpRestFulie.Web.Mvc
 
             ControllerBuilder.Current.SetControllerFactory(new WindsorControllerFactory(container));
 
-            container.RegisterControllers(typeof(HomeController).Assembly);
+            container.RegisterControllers(typeof(RouteRegistrar).Assembly);
             ComponentRegistrar.AddComponentsTo(container);
 
             var windsorServiceLocator = new WindsorServiceLocator(container);

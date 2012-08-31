@@ -152,7 +152,6 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="CastleWindsor\ComponentRegistrar.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Resources\ItemResource.cs" />
     <Compile Include="Controllers\ItemsController.cs" />
     <Compile Include="Controllers\RouteRegistrar.cs" />
@@ -174,7 +173,6 @@
     <Content Include="Scripts\jquery-1.7.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.2.js" />
     <Content Include="Scripts\jquery-1.7.2.min.js" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
