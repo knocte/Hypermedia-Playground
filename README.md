@@ -1,7 +1,7 @@
 SharpRestfulie
 ==============
 
-Spike on non sequential REST clients.
+Spike on non sequential REST clients with S#arp Arch 2.0 and Restfulie.
 
 The objective is to demo a business requirements change (that will impact the API consumers) without having to update the client application.
 
@@ -44,17 +44,17 @@ Usage:
 
 		Basket
 			Create
-				curl -d "" http://sharprestfulie.local/baskets -H "Accept: application/json"
+				curl -v -d "" http://sharprestfulie.local/baskets -H "Accept: application/json"
 			
 			Get 
 				curl http://sharprestfulie.local/baskets/1 -H "Accept: application/json"
 				
 			Add Track
-				curl -X POST -d "{\"trackId\":1}" http://sharprestfulie.local/baskets/1/Update -H "Content-Type: application/json" -H "Accept: application/json"
+				curl -v -X POST -d "{\"trackId\":1}" http://sharprestfulie.local/baskets/1/Update -H "Content-Type: application/json" -H "Accept: application/json"
 
 		Payments
 			Submit
-				curl -X POST -d "{\"basketId\":1}" http://sharprestfulie.local/payments -H "Content-Type: application/json" -H "Accept: application/json"
+				curl -v -X POST -d "{\"basketId\":1}" http://sharprestfulie.local/payments -H "Content-Type: application/json" -H "Accept: application/json"
 				
 			Get Receipt
 				curl http://sharprestfulie.local/payments/1 -H "Accept: application/json"
