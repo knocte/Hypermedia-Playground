@@ -105,9 +105,9 @@
       <Project>{9544D94B-9B6E-4B61-8A09-88382205BF86}</Project>
       <Name>SharpRestFulie.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SharpRestFulie.Web.Mvc.API\SharpRestFulie.Web.Mvc.API.csproj">
+    <ProjectReference Include="..\SharpRestFulie.Web.Mvc.API\SharpRestFulie.Web.MVC.API.csproj">
       <Project>{39613BA0-1206-4A4B-A16A-C1F2A22D1267}</Project>
-      <Name>SharpRestFulie.Web.Mvc.API</Name>
+      <Name>SharpRestFulie.Web.MVC.API</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
