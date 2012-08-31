@@ -3,3 +3,4 @@
 *.suo
 obj
 bin
+logs/SharpRestFulie.Web.log
