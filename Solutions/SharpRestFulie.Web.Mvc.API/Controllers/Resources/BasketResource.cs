@@ -20,7 +20,7 @@ namespace SharpRestFulie.Web.Mvc.Controllers.Resources
 			relations.Named("self").Uses<BasketsController>().Get(_id);
 			
 			//TODO: Comment current Business Process
-			relations.Named("submit payment").At("http://sharprestfulie.local/Payments");
+			relations.Named("SubmitPayment").At("http://sharprestfulie.local/Payments");
 
 			//TODO: Uncomment new Business Process
 			//var basketPrice = Tracks.Sum(x => x.Price);
