@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRestFulie.Tasks", "Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSpecTests.SharpRestFulie", "MSpecTests.SharpRestFulie\MSpecTests.SharpRestFulie.csproj", "{F63E0957-B60B-47A3-96BB-76DC243D0C8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRestFulie.Web.Mvc", "SharpRestFulie.Web.Mvc\SharpRestFulie.Web.Mvc.csproj", "{39613BA0-1206-4A4B-A16A-C1F2A22D1267}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRestFulie.Web.Mvc.API", "SharpRestFulie.Web.Mvc.API\SharpRestFulie.Web.Mvc.API.csproj", "{39613BA0-1206-4A4B-A16A-C1F2A22D1267}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRestFulie.Tests", "SharpRestFulie.Tests\SharpRestFulie.Tests.csproj", "{CC4A233E-BE8A-47CC-A87C-8352BFD557B7}"
 EndProject

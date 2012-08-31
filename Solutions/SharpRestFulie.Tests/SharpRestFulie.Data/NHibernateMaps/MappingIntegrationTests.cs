@@ -34,7 +34,7 @@
                 new SimpleSessionStorage(),
                 mappingAssemblies,
                 new AutoPersistenceModelGenerator().Generate(),
-                "../../../../Solutions/SharpRestFulie.Web.Mvc/NHibernate.config");
+                "../../../../Solutions/SharpRestFulie.Web.Mvc.API/NHibernate.config");
         }
 
         [TearDown]

@@ -1,383 +1,991 @@
-2012-08-21 09:39:29,931 [11] NHibernate.Cfg.Environment..cctor(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
+2012-08-31 15:13:41,385 [5] NHibernate.Cfg.Environment..cctor(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
 
-2012-08-21 09:39:29,966 [11] NHibernate.Cfg.Environment.LoadGlobalPropertiesFromAppConfig(:0) - hibernate-configuration section not found in application configuration file
+2012-08-31 15:13:41,424 [5] NHibernate.Cfg.Environment.LoadGlobalPropertiesFromAppConfig(:0) - hibernate-configuration section not found in application configuration file
 
-2012-08-21 09:39:29,969 [11] NHibernate.Cfg.Environment.BuildBytecodeProvider(:0) - Bytecode provider name : lcg
+2012-08-31 15:13:41,427 [5] NHibernate.Cfg.Environment.BuildBytecodeProvider(:0) - Bytecode provider name : lcg
 
-2012-08-21 09:39:29,973 [11] NHibernate.Cfg.Environment.get_Properties(:0) - Using reflection optimizer
+2012-08-31 15:13:41,429 [5] NHibernate.Cfg.Environment.get_Properties(:0) - Using reflection optimizer
 
-2012-08-21 09:39:30,020 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - connection.connection_string=Data Source=.;Initial Catalog=SharpRestFulie;Integrated Security=True;Application Name=SharpRestFulie;
+2012-08-31 15:13:41,447 [5] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
 
-2012-08-21 09:39:30,020 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - dialect=NHibernate.Dialect.MsSql2008Dialect
+2012-08-31 15:13:41,448 [5] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
 
-2012-08-21 09:39:30,021 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - connection.provider=NHibernate.Connection.DriverConnectionProvider
+2012-08-31 15:13:41,448 [5] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
 
-2012-08-21 09:39:30,021 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - connection.driver_class=NHibernate.Driver.SqlClientDriver
+2012-08-31 15:13:41,449 [5] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
 
-2012-08-21 09:39:30,021 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - show_sql=true
+2012-08-31 15:13:41,452 [5] NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(:0) - resolving reference to class: SharpRestFulie.Domain.Track
 
-2012-08-21 09:39:30,021 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - connection.release_mode=auto
+2012-08-31 15:13:41,455 [5] NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(:0) - resolving reference to class: SharpRestFulie.Domain.Basket
 
-2012-08-21 09:39:30,021 [11] NHibernate.Cfg.Configuration.AddProperties(:0) - adonet.batch_size=500
+2012-08-31 15:13:41,455 [5] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
 
-2012-08-21 09:39:30,022 [11] NHibernate.Cfg.Configuration.DoConfigure(:0) - properties: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2012-08-31 15:13:41,538 [5] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2012-08-21 09:39:30,048 [11] NHibernate.Cfg.Configuration.AddAssembly(:0) - No mapped documents found in assembly: SharpRestFulie.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-08-31 15:13:41,597 [5] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2012-08-21 09:39:30,379 [11] NHibernate.Cfg.Configuration.AddDocument(:0) - Mapping XML:
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="SharpRestFulie.Domain.Item, SharpRestFulie.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="Items"><id name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="ItemId" /><generator class="identity" /></id><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Name" /></property><property name="Description" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Description" /></property></class></hibernate-mapping>
+2012-08-31 15:13:41,650 [5] NHibernate.Exceptions.SQLExceptionConverterFactory.BuildSQLExceptionConverter(:0) - Using dialect defined converter
 
-2012-08-21 09:39:30,606 [11] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-08-31 15:13:41,651 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Generate SQL with comments: disabled
 
-2012-08-21 09:39:30,697 [11] NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(:0) - Mapping class: SharpRestFulie.Domain.Item -> Items
+2012-08-31 15:13:41,653 [5] NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(:0) - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
 
-2012-08-21 09:39:30,752 [11] NHibernate.Cfg.XmlHbmBinding.ClassIdBinder.BindId(:0) - Mapped property: Id -> ItemId, type: Int32
+2012-08-31 15:13:41,654 [5] NHibernate.Connection.ConnectionProvider.Configure(:0) - Configuring ConnectionProvider
 
-2012-08-21 09:39:30,784 [11] NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(:0) - Mapped property: Name -> Name, type: String
+2012-08-31 15:13:41,659 [5] NHibernate.Cfg.SettingsFactory.CreateTransactionFactory(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
 
-2012-08-21 09:39:30,785 [11] NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(:0) - Mapped property: Description -> Description, type: String
+2012-08-31 15:13:41,661 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Optimize cache for minimal puts: False
 
-2012-08-21 09:39:30,801 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
+2012-08-31 15:13:41,662 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Connection release mode: auto
 
-2012-08-21 09:39:30,802 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
+2012-08-31 15:13:41,663 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default batch fetch size: 1
 
-2012-08-21 09:39:30,802 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
+2012-08-31 15:13:41,663 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - echoing all SQL to stdout
 
-2012-08-21 09:39:30,803 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
+2012-08-31 15:13:41,663 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Statistics: disabled
 
-2012-08-21 09:39:30,806 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
+2012-08-31 15:13:41,663 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Deleted entity synthetic identifier rollback: disabled
 
-2012-08-21 09:39:30,843 [11] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-08-31 15:13:41,666 [5] NHibernate.Cfg.SettingsFactory.CreateQueryTranslatorFactory(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
 
-2012-08-21 09:39:30,858 [11] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-08-31 15:13:41,672 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
 
-2012-08-21 09:39:30,912 [11] NHibernate.Exceptions.SQLExceptionConverterFactory.BuildSQLExceptionConverter(:0) - Using dialect defined converter
+2012-08-31 15:13:41,675 [5] NHibernate.Cfg.SettingsFactory.CreateCacheProvider(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2012-08-21 09:39:30,914 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Generate SQL with comments: disabled
+2012-08-31 15:13:41,678 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Order SQL inserts for batching: enabled
 
-2012-08-21 09:39:30,916 [11] NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(:0) - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2012-08-31 15:13:41,678 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Wrap result sets: disabled
 
-2012-08-21 09:39:30,917 [11] NHibernate.Connection.ConnectionProvider.Configure(:0) - Configuring ConnectionProvider
+2012-08-31 15:13:41,680 [5] NHibernate.Cfg.SettingsFactory.CreateBatcherFactory(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2012-08-21 09:39:30,921 [11] NHibernate.Cfg.SettingsFactory.CreateTransactionFactory(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-08-31 15:13:41,681 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default entity-mode: Poco
 
-2012-08-21 09:39:30,922 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Optimize cache for minimal puts: False
+2012-08-31 15:13:41,681 [5] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Named query checking : enabled
 
-2012-08-21 09:39:30,922 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Connection release mode: auto
+2012-08-31 15:13:41,708 [5] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - building session factory
 
-2012-08-21 09:39:30,922 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default batch fetch size: 1
+2012-08-31 15:13:41,709 [5] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - Session factory constructed with filter configurations : {}
 
-2012-08-21 09:39:30,922 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - echoing all SQL to stdout
+2012-08-31 15:13:41,710 [5] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.connection_string'='Data Source=.;Initial Catalog=SharpRestFulie;Integrated Security=True;Application Name=SharpRestFulie;', 'dialect'='NHibernate.Dialect.MsSql2008Dialect', 'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'connection.driver_class'='NHibernate.Driver.SqlClientDriver', 'show_sql'='true', 'connection.release_mode'='auto', 'adonet.batch_size'='500'}
 
-2012-08-21 09:39:30,922 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Statistics: disabled
+2012-08-31 15:13:41,713 [5] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
 
-2012-08-21 09:39:30,923 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Deleted entity synthetic identifier rollback: disabled
+2012-08-31 15:13:41,737 [5] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
 
-2012-08-21 09:39:30,924 [11] NHibernate.Cfg.SettingsFactory.CreateQueryTranslatorFactory(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-08-31 15:13:41,915 [5] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Basket
 
-2012-08-21 09:39:30,929 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-08-31 15:13:41,938 [5] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Basket
 
-2012-08-21 09:39:30,931 [11] NHibernate.Cfg.SettingsFactory.CreateCacheProvider(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-08-31 15:13:41,985 [5] NHibernate.Tuple.Entity.PocoEntityTuplizer.BuildInstantiator(:0) - Create Instantiator using optimizer for:SharpRestFulie.Domain.Basket
 
-2012-08-21 09:39:30,931 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Order SQL inserts for batching: enabled
+2012-08-31 15:13:42,067 [5] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Item
 
-2012-08-21 09:39:30,932 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Wrap result sets: disabled
+2012-08-31 15:13:42,067 [5] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Item
 
-2012-08-21 09:39:30,933 [11] NHibernate.Cfg.SettingsFactory.CreateBatcherFactory(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-08-31 15:13:42,068 [5] NHibernate.Tuple.Entity.PocoEntityTuplizer.BuildInstantiator(:0) - Create Instantiator using optimizer for:SharpRestFulie.Domain.Item
 
-2012-08-21 09:39:30,934 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default entity-mode: Poco
+2012-08-31 15:13:42,070 [5] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Track
 
-2012-08-21 09:39:30,935 [11] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Named query checking : enabled
+2012-08-31 15:13:42,070 [5] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Track
 
-2012-08-21 09:39:30,960 [11] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - building session factory
+2012-08-31 15:13:42,070 [5] NHibernate.Tuple.Entity.PocoEntityTuplizer.BuildInstantiator(:0) - Create Instantiator using optimizer for:SharpRestFulie.Domain.Track
 
-2012-08-21 09:39:30,960 [11] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - Session factory constructed with filter configurations : {}
+2012-08-31 15:13:42,152 [5] NHibernate.Persister.Collection.AbstractCollectionPersister.LogStaticSQL(:0) - Static SQL for collection: SharpRestFulie.Domain.Basket.Tracks
 
-2012-08-21 09:39:30,962 [11] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.connection_string'='Data Source=.;Initial Catalog=SharpRestFulie;Integrated Security=True;Application Name=SharpRestFulie;', 'dialect'='NHibernate.Dialect.MsSql2008Dialect', 'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'connection.driver_class'='NHibernate.Driver.SqlClientDriver', 'show_sql'='true', 'connection.release_mode'='auto', 'adonet.batch_size'='500'}
+2012-08-31 15:13:42,156 [5] NHibernate.Persister.Collection.AbstractCollectionPersister.LogStaticSQL(:0) -  Row insert: INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (?, ?)
 
-2012-08-21 09:39:30,965 [11] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+2012-08-31 15:13:42,157 [5] NHibernate.Persister.Collection.AbstractCollectionPersister.LogStaticSQL(:0) -  Row update: UPDATE TrackToBasket SET TrackId = ? WHERE BasketId = ? AND TrackId = ?
 
-2012-08-21 09:39:30,989 [11] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+2012-08-31 15:13:42,158 [5] NHibernate.Persister.Collection.AbstractCollectionPersister.LogStaticSQL(:0) -  Row delete: DELETE FROM TrackToBasket WHERE BasketId = ? AND TrackId = ?
 
-2012-08-21 09:39:31,137 [11] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Item
+2012-08-31 15:13:42,158 [5] NHibernate.Persister.Collection.AbstractCollectionPersister..ctor(:0) -  One-shot delete: DELETE FROM TrackToBasket WHERE BasketId = ?
 
-2012-08-21 09:39:31,148 [11] NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(:0) - No custom accessors found for entity: SharpRestFulie.Domain.Item
+2012-08-31 15:13:42,227 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) - Static SQL for entity: SharpRestFulie.Domain.Basket
 
-2012-08-21 09:39:31,181 [11] NHibernate.Tuple.Entity.PocoEntityTuplizer.BuildInstantiator(:0) - Create Instantiator using optimizer for:SharpRestFulie.Domain.Item
+2012-08-31 15:13:42,227 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Version select: SELECT BasketId FROM Baskets WHERE BasketId = ?
 
-2012-08-21 09:39:31,327 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) - Static SQL for entity: SharpRestFulie.Domain.Item
+2012-08-31 15:13:42,228 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Snapshot select: SELECT basket_.BasketId FROM Baskets basket_ WHERE basket_.BasketId=?
 
-2012-08-21 09:39:31,328 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Version select: SELECT ItemId FROM Items WHERE ItemId = ?
+2012-08-31 15:13:42,229 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Insert 0: INSERT INTO Baskets (BasketId) VALUES (?)
 
-2012-08-21 09:39:31,328 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Snapshot select: SELECT item_.ItemId, item_.Name as Name0_, item_.Description as Descript3_0_ FROM Items item_ WHERE item_.ItemId=?
+2012-08-31 15:13:42,229 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Update 0: 
 
-2012-08-21 09:39:31,328 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Insert 0: INSERT INTO Items (Name, Description, ItemId) VALUES (?, ?, ?)
+2012-08-31 15:13:42,230 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Delete 0: DELETE FROM Baskets WHERE BasketId = ?
 
-2012-08-21 09:39:31,329 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Update 0: UPDATE Items SET Name = ?, Description = ? WHERE ItemId = ?
+2012-08-31 15:13:42,230 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Identity insert: INSERT INTO Baskets DEFAULT VALUES; select SCOPE_IDENTITY()
 
-2012-08-21 09:39:31,329 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Delete 0: DELETE FROM Items WHERE ItemId = ?
+2012-08-31 15:13:42,339 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,329 [11] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Identity insert: INSERT INTO Items (Name, Description) VALUES (?, ?); select SCOPE_IDENTITY()
+2012-08-31 15:13:42,340 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,394 [11] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ WHERE item0_.ItemId=?
+2012-08-31 15:13:42,341 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ with (updlock, rowlock) WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,394 [11] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ WHERE item0_.ItemId=?
+2012-08-31 15:13:42,341 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ with (updlock, rowlock, nowait) WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,395 [11] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ with (updlock, rowlock) WHERE item0_.ItemId=?
+2012-08-31 15:13:42,341 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ with (updlock, rowlock) WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,395 [11] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ with (updlock, rowlock, nowait) WHERE item0_.ItemId=?
+2012-08-31 15:13:42,381 [5] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_1_, tracks1_.BasketId as BasketId3_, track2_.TrackId as TrackId3_, track2_.TrackId as TrackId3_0_, track2_.Name as Name3_0_, track2_.Description as Descript3_3_0_ FROM Baskets basket0_ left outer join TrackToBasket tracks1_ on basket0_.BasketId=tracks1_.BasketId left outer join Tracks track2_ on tracks1_.TrackId=track2_.TrackId WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,396 [11] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ with (updlock, rowlock) WHERE item0_.ItemId=?
+2012-08-31 15:13:42,382 [5] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity SharpRestFulie.Domain.Basket: SELECT basket0_.BasketId as BasketId0_1_, tracks1_.BasketId as BasketId3_, track2_.TrackId as TrackId3_, track2_.TrackId as TrackId3_0_, track2_.Name as Name3_0_, track2_.Description as Descript3_3_0_ FROM Baskets basket0_ left outer join TrackToBasket tracks1_ on basket0_.BasketId=tracks1_.BasketId left outer join Tracks track2_ on tracks1_.TrackId=track2_.TrackId WHERE basket0_.BasketId=?
 
-2012-08-21 09:39:31,398 [11] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ WHERE item0_.ItemId=?
+2012-08-31 15:13:42,384 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) - Static SQL for entity: SharpRestFulie.Domain.Item
 
-2012-08-21 09:39:31,398 [11] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId0_0_, item0_.Name as Name0_0_, item0_.Description as Descript3_0_0_ FROM Items item0_ WHERE item0_.ItemId=?
+2012-08-31 15:13:42,384 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Version select: SELECT ItemId FROM Items WHERE ItemId = ?
 
-2012-08-21 09:39:31,401 [11] NHibernate.Impl.SessionFactoryObjectFactory.AddInstance(:0) - initializing class SessionFactoryObjectFactory
+2012-08-31 15:13:42,384 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Snapshot select: SELECT item_.ItemId, item_.Name as Name2_, item_.Description as Descript3_2_ FROM Items item_ WHERE item_.ItemId=?
 
-2012-08-21 09:39:31,402 [11] NHibernate.Impl.SessionFactoryObjectFactory.AddInstance(:0) - registered: 702e60c39ed74658b74cd9097792bcd2(unnamed)
+2012-08-31 15:13:42,384 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Insert 0: INSERT INTO Items (Name, Description, ItemId) VALUES (?, ?, ?)
 
-2012-08-21 09:39:31,402 [11] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - no name configured
+2012-08-31 15:13:42,384 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Update 0: UPDATE Items SET Name = ?, Description = ? WHERE ItemId = ?
 
-2012-08-21 09:39:31,402 [11] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - Instantiated session factory
+2012-08-31 15:13:42,385 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Delete 0: DELETE FROM Items WHERE ItemId = ?
 
-2012-08-21 09:39:31,410 [11] NHibernate.Impl.SessionFactoryImpl.CheckNamedQueries(:0) - Checking 0 named HQL queries
+2012-08-31 15:13:42,385 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Identity insert: INSERT INTO Items (Name, Description) VALUES (?, ?); select SCOPE_IDENTITY()
 
-2012-08-21 09:39:31,410 [11] NHibernate.Impl.SessionFactoryImpl.CheckNamedQueries(:0) - Checking 0 named SQL queries
+2012-08-31 15:13:42,385 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,415 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
+2012-08-31 15:13:42,385 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,419 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
+2012-08-31 15:13:42,385 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ with (updlock, rowlock) WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,419 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
+2012-08-31 15:13:42,386 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ with (updlock, rowlock, nowait) WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,419 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
+2012-08-31 15:13:42,386 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ with (updlock, rowlock) WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,420 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
+2012-08-31 15:13:42,386 [5] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,425 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
+2012-08-31 15:13:42,386 [5] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity SharpRestFulie.Domain.Item: SELECT item0_.ItemId as ItemId2_0_, item0_.Name as Name2_0_, item0_.Description as Descript3_2_0_ FROM Items item0_ WHERE item0_.ItemId=?
 
-2012-08-21 09:39:31,425 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
+2012-08-31 15:13:42,386 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) - Static SQL for entity: SharpRestFulie.Domain.Track
 
-2012-08-21 09:39:31,426 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Version select: SELECT TrackId FROM Tracks WHERE TrackId = ?
 
-2012-08-21 09:39:31,426 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Snapshot select: SELECT track_.TrackId, track_.Name as Name3_, track_.Description as Descript3_3_ FROM Tracks track_ WHERE track_.TrackId=?
 
-2012-08-21 09:39:31,426 [11] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Insert 0: INSERT INTO Tracks (Name, Description, TrackId) VALUES (?, ?, ?)
 
-2012-08-21 09:39:31,616 [11] NHibernate.Impl.SessionImpl..ctor(:0) - [session-id=5a56be33-2a08-42a3-ac92-bd46986d0982] opened session at timestamp: 634811387716, for session factory: [/702e60c39ed74658b74cd9097792bcd2]
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Update 0: UPDATE Tracks SET Name = ?, Description = ? WHERE TrackId = ?
 
-2012-08-21 09:39:31,652 [11] NHibernate.Loader.Criteria.CriteriaQueryTranslator.CreateCriteriaSQLAliasMap(:0) - put criteria= alias=this0_
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Delete 0: DELETE FROM Tracks WHERE TrackId = ?
 
-2012-08-21 09:39:31,724 [11] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.LogStaticSQL(:0) -  Identity insert: INSERT INTO Tracks (Name, Description) VALUES (?, ?); select SCOPE_IDENTITY()
 
-2012-08-21 09:39:31,725 [11] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,387 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,735 [11] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,387 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,743 [11] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,387 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ with (updlock, rowlock) WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,746 [11] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+2012-08-31 15:13:42,387 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ with (updlock, rowlock, nowait) WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,748 [11] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+2012-08-31 15:13:42,387 [5] NHibernate.Loader.Entity.BatchingEntityLoader.CreateBatchingEntityLoader(:0) - Static select for entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ with (updlock, rowlock) WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,749 [11] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+2012-08-31 15:13:42,387 [5] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,754 [11] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+2012-08-31 15:13:42,388 [5] NHibernate.Persister.Entity.AbstractEntityPersister.CreateLoaders(:0) - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity SharpRestFulie.Domain.Track: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=?
 
-2012-08-21 09:39:31,754 [11] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (0 rows)
+2012-08-31 15:13:42,405 [5] NHibernate.Loader.Collection.BatchingCollectionInitializer.CreateBatchingCollectionInitializer(:0) - Static select for collection SharpRestFulie.Domain.Basket.Tracks: SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=?
 
-2012-08-21 09:39:31,757 [11] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+2012-08-31 15:13:42,407 [5] NHibernate.Impl.SessionFactoryObjectFactory.AddInstance(:0) - initializing class SessionFactoryObjectFactory
 
-2012-08-21 09:39:31,757 [11] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+2012-08-31 15:13:42,409 [5] NHibernate.Impl.SessionFactoryObjectFactory.AddInstance(:0) - registered: 829894500abb47b4b98f3218d4f5d4c4(unnamed)
 
-2012-08-21 09:39:31,757 [11] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 9 ms
+2012-08-31 15:13:42,409 [5] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - no name configured
 
-2012-08-21 09:39:31,760 [11] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+2012-08-31 15:13:42,409 [5] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - Instantiated session factory
 
-2012-08-21 09:39:31,762 [11] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+2012-08-31 15:13:42,421 [5] NHibernate.Impl.SessionFactoryImpl.CheckNamedQueries(:0) - Checking 0 named HQL queries
 
-2012-08-21 09:39:31,762 [11] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+2012-08-31 15:13:42,421 [5] NHibernate.Impl.SessionFactoryImpl.CheckNamedQueries(:0) - Checking 0 named SQL queries
 
-2012-08-21 09:39:31,764 [11] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 0
+2012-08-31 15:13:42,645 [5] NHibernate.Impl.SessionImpl..ctor(:0) - [session-id=850e2efa-0621-4d22-97ee-e032fa6c789c] opened session at timestamp: 634820228226, for session factory: [/829894500abb47b4b98f3218d4f5d4c4]
 
-2012-08-21 09:39:31,767 [11] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+2012-08-31 15:13:42,664 [5] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:39:31,772 [11] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+2012-08-31 15:13:42,669 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:39:31,773 [11] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+2012-08-31 15:13:42,674 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - object not resolved in any cache: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:39:31,775 [11] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+2012-08-31 15:13:42,676 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Load(:0) - Fetching entity: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:39:31,931 [11] NHibernate.Impl.SessionImpl.Close(:0) - closing session
+2012-08-31 15:13:42,682 [5] NHibernate.Loader.Loader.LoadEntity(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:39:31,932 [11] NHibernate.AdoNet.AbstractBatcher.Dispose(:0) - running BatcherImpl.Dispose(true)
+2012-08-31 15:13:42,745 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
 
-2012-08-21 09:40:05,857 [7] NHibernate.Impl.SessionImpl..ctor(:0) - [session-id=fcff53c2-a3ea-41ef-ab41-df56962e7677] opened session at timestamp: 634811388058, for session factory: [/702e60c39ed74658b74cd9097792bcd2]
+2012-08-31 15:13:42,746 [5] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=?
 
-2012-08-21 09:40:05,857 [7] NHibernate.Loader.Criteria.CriteriaQueryTranslator.CreateCriteriaSQLAliasMap(:0) - put criteria= alias=this0_
+2012-08-31 15:13:42,749 [5] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
 
-2012-08-21 09:40:05,858 [7] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+2012-08-31 15:13:42,756 [5] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=@p0
 
-2012-08-21 09:40:05,858 [7] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,774 [5] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=@p0;@p0 = 1 [Type: Int32 (0)]
 
-2012-08-21 09:40:05,858 [7] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,777 [5] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
 
-2012-08-21 09:40:05,858 [7] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,781 [5] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
 
-2012-08-21 09:40:05,858 [7] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+2012-08-31 15:13:42,782 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
 
-2012-08-21 09:40:05,859 [7] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+2012-08-31 15:13:42,785 [5] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
 
-2012-08-21 09:40:05,859 [7] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+2012-08-31 15:13:42,785 [5] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
 
-2012-08-21 09:40:05,859 [7] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+2012-08-31 15:13:42,794 [5] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:40:05,859 [7] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+2012-08-31 15:13:42,808 [5] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:40:05,868 [7] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: ItemId0_0_
+2012-08-31 15:13:42,819 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:40:05,876 [7] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,822 [5] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (1 rows)
 
-2012-08-21 09:40:05,890 [7] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,826 [5] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
 
-2012-08-21 09:40:05,900 [7] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,827 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
 
-2012-08-21 09:40:05,902 [7] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'item 1' as column: Name0_0_
+2012-08-31 15:13:42,827 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 52 ms
 
-2012-08-21 09:40:05,902 [7] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'this is a great item at a great price' as column: Descript3_0_0_
+2012-08-31 15:13:42,829 [5] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
 
-2012-08-21 09:40:05,908 [7] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 1
+2012-08-31 15:13:42,831 [5] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
 
-2012-08-21 09:40:05,908 [7] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '2' as column: ItemId0_0_
+2012-08-31 15:13:42,831 [5] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
 
-2012-08-21 09:40:05,908 [7] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,834 [5] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 1
 
-2012-08-21 09:40:05,908 [7] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,846 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:40:05,909 [7] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,855 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollection(:0) - creating collection wrapper:[SharpRestFulie.Domain.Basket.Tracks#1]
 
-2012-08-21 09:40:05,909 [7] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'item 2' as column: Name0_0_
+2012-08-31 15:13:42,871 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Basket#1]
 
-2012-08-21 09:40:05,909 [7] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'this is not such a great item at not such a great price...' as column: Descript3_0_0_
+2012-08-31 15:13:42,874 [5] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
 
-2012-08-21 09:40:05,909 [7] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (2 rows)
+2012-08-31 15:13:42,875 [5] NHibernate.Loader.Loader.LoadEntity(:0) - done entity load
 
-2012-08-21 09:40:05,909 [7] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+2012-08-31 15:13:42,876 [5] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
 
-2012-08-21 09:40:05,909 [7] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+2012-08-31 15:13:42,878 [5] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
 
-2012-08-21 09:40:05,909 [7] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 51 ms
+2012-08-31 15:13:42,880 [5] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
 
-2012-08-21 09:40:05,910 [7] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+2012-08-31 15:13:42,902 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - initializing collection [SharpRestFulie.Domain.Basket.Tracks#1]
 
-2012-08-21 09:40:05,910 [7] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+2012-08-31 15:13:42,902 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - checking second-level cache
 
-2012-08-21 09:40:05,910 [7] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+2012-08-31 15:13:42,906 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - collection not cached
 
-2012-08-21 09:40:05,910 [7] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 2
+2012-08-31 15:13:42,912 [5] NHibernate.Loader.Loader.LoadCollection(:0) - loading collection: [SharpRestFulie.Domain.Basket.Tracks#1]
 
-2012-08-21 09:40:05,918 [7] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,916 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
 
-2012-08-21 09:40:05,925 [7] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,916 [5] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=?
 
-2012-08-21 09:40:05,925 [7] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,916 [5] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
 
-2012-08-21 09:40:05,926 [7] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,917 [5] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=@p0
 
-2012-08-21 09:40:05,926 [7] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+2012-08-31 15:13:42,917 [5] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=@p0;@p0 = 1 [Type: Int32 (0)]
 
-2012-08-21 09:40:05,926 [7] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+2012-08-31 15:13:42,917 [5] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
 
-2012-08-21 09:40:05,926 [7] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+2012-08-31 15:13:42,918 [5] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
 
-2012-08-21 09:40:05,926 [7] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+2012-08-31 15:13:42,918 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
 
-2012-08-21 09:40:05,930 [7] NHibernate.Impl.SessionImpl.Close(:0) - closing session
+2012-08-31 15:13:42,920 [5] NHibernate.Loader.Loader.HandleEmptyCollections(:0) - result set contains (possibly empty) collection: [SharpRestFulie.Domain.Basket.Tracks#1]
 
-2012-08-21 09:40:05,931 [7] NHibernate.AdoNet.AbstractBatcher.Dispose(:0) - running BatcherImpl.Dispose(true)
+2012-08-31 15:13:42,922 [5] NHibernate.Engine.Loading.LoadContexts.GetCollectionLoadContext(:0) - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
 
-2012-08-21 09:40:23,493 [11] NHibernate.Impl.SessionImpl..ctor(:0) - [session-id=8571f96a-ca53-4ea8-aa07-38e323429b81] opened session at timestamp: 634811388234, for session factory: [/702e60c39ed74658b74cd9097792bcd2]
+2012-08-31 15:13:42,924 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
 
-2012-08-21 09:40:23,493 [11] NHibernate.Loader.Criteria.CriteriaQueryTranslator.CreateCriteriaSQLAliasMap(:0) - put criteria= alias=this0_
+2012-08-31 15:13:42,927 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - collection not yet initialized; initializing
 
-2012-08-21 09:40:23,493 [11] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+2012-08-31 15:13:42,929 [5] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
 
-2012-08-21 09:40:23,494 [11] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,929 [5] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
 
-2012-08-21 09:40:23,494 [11] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,932 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: TrackId3_0_
 
-2012-08-21 09:40:23,494 [11] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT this_.ItemId as ItemId0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_ FROM Items this_
+2012-08-31 15:13:42,932 [5] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,494 [11] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+2012-08-31 15:13:42,934 [5] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,495 [11] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+2012-08-31 15:13:42,934 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,495 [11] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+2012-08-31 15:13:42,935 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'name 1' as column: Name3_0_
 
-2012-08-21 09:40:23,495 [11] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+2012-08-31 15:13:42,935 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'desc 1' as column: Descript3_3_0_
 
-2012-08-21 09:40:23,495 [11] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+2012-08-31 15:13:42,938 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: BasketId1_
 
-2012-08-21 09:40:23,495 [11] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: ItemId0_0_
+2012-08-31 15:13:42,938 [5] NHibernate.Loader.Loader.ReadCollectionElement(:0) - found row of collection: [SharpRestFulie.Domain.Basket.Tracks#1]
 
-2012-08-21 09:40:23,496 [11] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,940 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
 
-2012-08-21 09:40:23,496 [11] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,940 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
 
-2012-08-21 09:40:23,496 [11] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,941 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
 
-2012-08-21 09:40:23,496 [11] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'item 1' as column: Name0_0_
+2012-08-31 15:13:42,941 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - found loading collection bound to current result set processing; reading row
 
-2012-08-21 09:40:23,496 [11] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'this is a great item at a great price' as column: Descript3_0_0_
+2012-08-31 15:13:42,943 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: TrackId1_
 
-2012-08-21 09:40:23,496 [11] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 1
+2012-08-31 15:13:42,949 [5] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,497 [11] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '2' as column: ItemId0_0_
+2012-08-31 15:13:42,949 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,497 [11] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,952 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - resolved object in session cache: [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,497 [11] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,956 [5] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (1 rows)
 
-2012-08-21 09:40:23,498 [11] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,956 [5] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
 
-2012-08-21 09:40:23,498 [11] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'item 2' as column: Name0_0_
+2012-08-31 15:13:42,956 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
 
-2012-08-21 09:40:23,498 [11] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'this is not such a great item at not such a great price...' as column: Descript3_0_0_
+2012-08-31 15:13:42,956 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 49 ms
 
-2012-08-21 09:40:23,499 [11] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (2 rows)
+2012-08-31 15:13:42,956 [5] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
 
-2012-08-21 09:40:23,499 [11] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+2012-08-31 15:13:42,956 [5] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
 
-2012-08-21 09:40:23,499 [11] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+2012-08-31 15:13:42,956 [5] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
 
-2012-08-21 09:40:23,499 [11] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 4 ms
+2012-08-31 15:13:42,957 [5] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 1
 
-2012-08-21 09:40:23,500 [11] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+2012-08-31 15:13:42,957 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,500 [11] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+2012-08-31 15:13:42,959 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Track#1]
 
-2012-08-21 09:40:23,500 [11] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+2012-08-31 15:13:42,966 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
 
-2012-08-21 09:40:23,500 [11] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 2
+2012-08-31 15:13:42,967 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
 
-2012-08-21 09:40:23,501 [11] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,969 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[SharpRestFulie.Domain.Basket.Tracks#1]>@233055a]
 
-2012-08-21 09:40:23,501 [11] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Item#1]
+2012-08-31 15:13:42,973 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - 1 collections were found in result set for role: SharpRestFulie.Domain.Basket.Tracks
 
-2012-08-21 09:40:23,501 [11] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,976 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollection(:0) - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[SharpRestFulie.Domain.Basket.Tracks#1]>@233055a]
 
-2012-08-21 09:40:23,501 [11] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Item#2]
+2012-08-31 15:13:42,984 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollection(:0) - collection fully initialized: [SharpRestFulie.Domain.Basket.Tracks#1]
 
-2012-08-21 09:40:23,501 [11] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+2012-08-31 15:13:42,984 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - 1 collections initialized for role: SharpRestFulie.Domain.Basket.Tracks
 
-2012-08-21 09:40:23,501 [11] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+2012-08-31 15:13:42,989 [5] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
 
-2012-08-21 09:40:23,501 [11] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+2012-08-31 15:13:42,989 [5] NHibernate.Loader.Loader.LoadCollection(:0) - done loading collection
 
-2012-08-21 09:40:23,501 [11] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+2012-08-31 15:13:42,989 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - collection initialized
 
-2012-08-21 09:40:23,726 [11] NHibernate.Impl.SessionImpl.Close(:0) - closing session
+2012-08-31 15:13:43,251 [5] NHibernate.Impl.SessionImpl.Close(:0) - closing session
 
-2012-08-21 09:40:23,726 [11] NHibernate.AdoNet.AbstractBatcher.Dispose(:0) - running BatcherImpl.Dispose(true)
+2012-08-31 15:13:43,252 [5] NHibernate.AdoNet.AbstractBatcher.Dispose(:0) - running BatcherImpl.Dispose(true)
+
+2012-08-31 15:13:52,822 [27] NHibernate.Impl.SessionImpl..ctor(:0) - [session-id=15c6c368-c2a7-4446-8e70-570a839f7ee1] opened session at timestamp: 634820228328, for session factory: [/829894500abb47b4b98f3218d4f5d4c4]
+
+2012-08-31 15:13:52,823 [27] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,823 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,823 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - object not resolved in any cache: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,823 [27] NHibernate.Persister.Entity.AbstractEntityPersister.Load(:0) - Fetching entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,823 [27] NHibernate.Loader.Loader.LoadEntity(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,823 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:52,824 [27] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=?
+
+2012-08-31 15:13:52,824 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:52,824 [27] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=@p0
+
+2012-08-31 15:13:52,824 [27] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=@p0;@p0 = 1 [Type: Int32 (0)]
+
+2012-08-31 15:13:52,825 [27] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+
+2012-08-31 15:13:52,825 [27] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+
+2012-08-31 15:13:52,826 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+
+2012-08-31 15:13:52,826 [27] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+
+2012-08-31 15:13:52,826 [27] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+
+2012-08-31 15:13:52,826 [27] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,826 [27] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,826 [27] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,827 [27] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (1 rows)
+
+2012-08-31 15:13:52,827 [27] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+
+2012-08-31 15:13:52,827 [27] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+
+2012-08-31 15:13:52,827 [27] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 2 ms
+
+2012-08-31 15:13:52,827 [27] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:52,827 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:52,828 [27] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+
+2012-08-31 15:13:52,828 [27] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 1
+
+2012-08-31 15:13:52,828 [27] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,828 [27] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollection(:0) - creating collection wrapper:[SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,828 [27] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,828 [27] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+
+2012-08-31 15:13:52,829 [27] NHibernate.Loader.Loader.LoadEntity(:0) - done entity load
+
+2012-08-31 15:13:52,829 [27] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+
+2012-08-31 15:13:52,829 [27] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+
+2012-08-31 15:13:52,829 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:52,830 [27] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,830 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,830 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - object not resolved in any cache: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,830 [27] NHibernate.Persister.Entity.AbstractEntityPersister.Load(:0) - Fetching entity: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,830 [27] NHibernate.Loader.Loader.LoadEntity(:0) - loading entity: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,831 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:52,831 [27] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=?
+
+2012-08-31 15:13:52,831 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '3' to parameter: 0
+
+2012-08-31 15:13:52,831 [27] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=@p0
+
+2012-08-31 15:13:52,831 [27] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT track0_.TrackId as TrackId3_0_, track0_.Name as Name3_0_, track0_.Description as Descript3_3_0_ FROM Tracks track0_ WHERE track0_.TrackId=@p0;@p0 = 3 [Type: Int32 (0)]
+
+2012-08-31 15:13:52,831 [27] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+
+2012-08-31 15:13:52,832 [27] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+
+2012-08-31 15:13:52,832 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+
+2012-08-31 15:13:52,832 [27] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+
+2012-08-31 15:13:52,832 [27] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+
+2012-08-31 15:13:52,833 [27] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,833 [27] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,833 [27] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,833 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'name 3' as column: Name3_0_
+
+2012-08-31 15:13:52,833 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'desc 3' as column: Descript3_3_0_
+
+2012-08-31 15:13:52,833 [27] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (1 rows)
+
+2012-08-31 15:13:52,834 [27] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+
+2012-08-31 15:13:52,834 [27] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+
+2012-08-31 15:13:52,834 [27] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 2 ms
+
+2012-08-31 15:13:52,834 [27] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:52,834 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:52,834 [27] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+
+2012-08-31 15:13:52,834 [27] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 1
+
+2012-08-31 15:13:52,835 [27] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,835 [27] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,835 [27] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+
+2012-08-31 15:13:52,835 [27] NHibernate.Loader.Loader.LoadEntity(:0) - done entity load
+
+2012-08-31 15:13:52,835 [27] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+
+2012-08-31 15:13:52,835 [27] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+
+2012-08-31 15:13:52,835 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:52,837 [27] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - initializing collection [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,838 [27] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - checking second-level cache
+
+2012-08-31 15:13:52,838 [27] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - collection not cached
+
+2012-08-31 15:13:52,838 [27] NHibernate.Loader.Loader.LoadCollection(:0) - loading collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,838 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:52,838 [27] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=?
+
+2012-08-31 15:13:52,839 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:52,839 [27] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=@p0
+
+2012-08-31 15:13:52,839 [27] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=@p0;@p0 = 1 [Type: Int32 (0)]
+
+2012-08-31 15:13:52,839 [27] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+
+2012-08-31 15:13:52,840 [27] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+
+2012-08-31 15:13:52,840 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+
+2012-08-31 15:13:52,840 [27] NHibernate.Loader.Loader.HandleEmptyCollections(:0) - result set contains (possibly empty) collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,840 [27] NHibernate.Engine.Loading.LoadContexts.GetCollectionLoadContext(:0) - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+
+2012-08-31 15:13:52,841 [27] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
+
+2012-08-31 15:13:52,841 [27] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - collection not yet initialized; initializing
+
+2012-08-31 15:13:52,841 [27] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+
+2012-08-31 15:13:52,841 [27] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+
+2012-08-31 15:13:52,841 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: TrackId3_0_
+
+2012-08-31 15:13:52,841 [27] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,841 [27] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,842 [27] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,842 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'name 1' as column: Name3_0_
+
+2012-08-31 15:13:52,842 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'desc 1' as column: Descript3_3_0_
+
+2012-08-31 15:13:52,842 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: BasketId1_
+
+2012-08-31 15:13:52,842 [27] NHibernate.Loader.Loader.ReadCollectionElement(:0) - found row of collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,842 [27] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
+
+2012-08-31 15:13:52,843 [27] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
+
+2012-08-31 15:13:52,843 [27] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
+
+2012-08-31 15:13:52,843 [27] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - found loading collection bound to current result set processing; reading row
+
+2012-08-31 15:13:52,843 [27] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: TrackId1_
+
+2012-08-31 15:13:52,843 [27] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,843 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,843 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - resolved object in session cache: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,844 [27] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (1 rows)
+
+2012-08-31 15:13:52,844 [27] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+
+2012-08-31 15:13:52,844 [27] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+
+2012-08-31 15:13:52,844 [27] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 4 ms
+
+2012-08-31 15:13:52,844 [27] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:52,844 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:52,844 [27] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+
+2012-08-31 15:13:52,845 [27] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 1
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[SharpRestFulie.Domain.Basket.Tracks#1]>@3e725d0]
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - 1 collections were found in result set for role: SharpRestFulie.Domain.Basket.Tracks
+
+2012-08-31 15:13:52,845 [27] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollection(:0) - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[SharpRestFulie.Domain.Basket.Tracks#1]>@3e725d0]
+
+2012-08-31 15:13:52,846 [27] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollection(:0) - collection fully initialized: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,846 [27] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - 1 collections initialized for role: SharpRestFulie.Domain.Basket.Tracks
+
+2012-08-31 15:13:52,846 [27] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+
+2012-08-31 15:13:52,846 [27] NHibernate.Loader.Loader.LoadCollection(:0) - done loading collection
+
+2012-08-31 15:13:52,846 [27] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - collection initialized
+
+2012-08-31 15:13:52,854 [27] NHibernate.Event.Default.AbstractSaveEventListener.GetEntityState(:0) - persistent instance of: SharpRestFulie.Domain.Basket
+
+2012-08-31 15:13:52,856 [27] NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsPersistent(:0) - ignoring persistent instance
+
+2012-08-31 15:13:52,856 [27] NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsPersistent(:0) - object already associated with session: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:52,862 [27] NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(:0) - flushing session
+
+2012-08-31 15:13:52,864 [27] NHibernate.Event.Default.AbstractFlushingEventListener.PrepareEntityFlushes(:0) - processing flush-time cascades
+
+2012-08-31 15:13:52,868 [27] NHibernate.Engine.Cascade.CascadeOn(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: SharpRestFulie.Domain.Basket
+
+2012-08-31 15:13:52,875 [27] NHibernate.Engine.Cascade.CascadeCollectionElements(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: SharpRestFulie.Domain.Basket.Tracks
+
+2012-08-31 15:13:52,879 [27] NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction.Cascade(:0) - cascading to saveOrUpdate: SharpRestFulie.Domain.Track
+
+2012-08-31 15:13:52,880 [27] NHibernate.Event.Default.AbstractSaveEventListener.GetEntityState(:0) - persistent instance of: SharpRestFulie.Domain.Track
+
+2012-08-31 15:13:52,880 [27] NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsPersistent(:0) - ignoring persistent instance
+
+2012-08-31 15:13:52,880 [27] NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsPersistent(:0) - object already associated with session: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:52,880 [27] NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction.Cascade(:0) - cascading to saveOrUpdate: SharpRestFulie.Domain.Track
+
+2012-08-31 15:13:52,881 [27] NHibernate.Event.Default.AbstractSaveEventListener.GetEntityState(:0) - persistent instance of: SharpRestFulie.Domain.Track
+
+2012-08-31 15:13:52,881 [27] NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsPersistent(:0) - ignoring persistent instance
+
+2012-08-31 15:13:52,881 [27] NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsPersistent(:0) - object already associated with session: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:52,881 [27] NHibernate.Engine.Cascade.CascadeCollectionElements(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: SharpRestFulie.Domain.Basket.Tracks
+
+2012-08-31 15:13:52,881 [27] NHibernate.Event.Default.AbstractFlushingEventListener.CascadeOnFlush(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: SharpRestFulie.Domain.Basket
+
+2012-08-31 15:13:52,883 [27] NHibernate.Event.Default.AbstractFlushingEventListener.PrepareCollectionFlushes(:0) - dirty checking collections
+
+2012-08-31 15:13:52,886 [27] NHibernate.Engine.CollectionEntry.PreFlush(:0) - Collection dirty: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,889 [27] NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(:0) - Flushing entities and processing referenced collections
+
+2012-08-31 15:13:52,916 [27] NHibernate.Engine.Collections.ProcessReachableCollection(:0) - Collection found: [SharpRestFulie.Domain.Basket.Tracks#1], was: [SharpRestFulie.Domain.Basket.Tracks#1] (initialized)
+
+2012-08-31 15:13:52,938 [27] NHibernate.Event.Default.AbstractFlushingEventListener.FlushCollections(:0) - Processing unreferenced collections
+
+2012-08-31 15:13:52,939 [27] NHibernate.Event.Default.AbstractFlushingEventListener.FlushCollections(:0) - Scheduling collection removes/(re)creates/updates
+
+2012-08-31 15:13:52,941 [27] NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(:0) - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+
+2012-08-31 15:13:52,942 [27] NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(:0) - Flushed: 0 (re)creations, 1 updates, 0 removals to 1 collections
+
+2012-08-31 15:13:52,942 [27] NHibernate.Impl.Printer.ToString(:0) - listing entities:
+
+2012-08-31 15:13:52,955 [27] NHibernate.Impl.Printer.ToString(:0) - SharpRestFulie.Domain.Basket{'Id'='1', 'Tracks'='['SharpRestFulie.Domain.Track#1', 'SharpRestFulie.Domain.Track#3']'}
+
+2012-08-31 15:13:52,956 [27] NHibernate.Impl.Printer.ToString(:0) - SharpRestFulie.Domain.Track{'Id'='3', 'Name'='name 3', 'Description'='desc 3'}
+
+2012-08-31 15:13:52,956 [27] NHibernate.Impl.Printer.ToString(:0) - SharpRestFulie.Domain.Track{'Id'='1', 'Name'='name 1', 'Description'='desc 1'}
+
+2012-08-31 15:13:52,957 [27] NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(:0) - executing flush
+
+2012-08-31 15:13:52,957 [27] NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(:0) - registering flush begin
+
+2012-08-31 15:13:52,969 [27] NHibernate.Persister.Collection.AbstractCollectionPersister.Remove(:0) - Deleting collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,971 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:52,972 [27] NHibernate.AdoNet.AbstractBatcher.Generate(:0) - Building an IDbCommand object for the SqlString: DELETE FROM TrackToBasket WHERE BasketId = ?
+
+2012-08-31 15:13:52,972 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:52,974 [27] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - DELETE FROM TrackToBasket WHERE BasketId = @p0;@p0 = 1 [Type: Int32 (0)]
+
+2012-08-31 15:13:52,974 [27] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+
+2012-08-31 15:13:52,979 [27] NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(:0) - ExecuteNonQuery took 4 ms
+
+2012-08-31 15:13:52,980 [27] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:52,980 [27] NHibernate.AdoNet.AbstractBatcher.CloseCommand(:0) - skipping aggressive-release due to flush cycle
+
+2012-08-31 15:13:52,981 [27] NHibernate.Persister.Collection.AbstractCollectionPersister.Remove(:0) - done deleting collection
+
+2012-08-31 15:13:52,987 [27] NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(:0) - Inserting collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:52,993 [27] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:52,993 [27] NHibernate.AdoNet.AbstractBatcher.Generate(:0) - Building an IDbCommand object for the SqlString: INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (?, ?)
+
+2012-08-31 15:13:52,993 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:52,999 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 1
+
+2012-08-31 15:13:53,001 [27] NHibernate.AdoNet.SqlClientBatchingBatcher.AddToBatch(:0) - Adding to batch:INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (@p0, @p1);@p0 = 1 [Type: Int32 (0)], @p1 = 1 [Type: Int32 (0)]
+
+2012-08-31 15:13:53,003 [27] NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(:0) - reusing command INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (@p0, @p1)
+
+2012-08-31 15:13:53,003 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:53,003 [27] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '3' to parameter: 1
+
+2012-08-31 15:13:53,003 [27] NHibernate.AdoNet.SqlClientBatchingBatcher.AddToBatch(:0) - Adding to batch:INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (@p0, @p1);@p0 = 1 [Type: Int32 (0)], @p1 = 3 [Type: Int32 (0)]
+
+2012-08-31 15:13:53,003 [27] NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(:0) - done inserting collection: 2 rows inserted
+
+2012-08-31 15:13:53,010 [27] NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(:0) - Executing batch
+
+2012-08-31 15:13:53,011 [27] NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(:0) - Batch commands:
+command 0:INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (@p0, @p1);@p0 = 1 [Type: Int32 (0)], @p1 = 1 [Type: Int32 (0)]
+command 1:INSERT INTO TrackToBasket (BasketId, TrackId) VALUES (@p0, @p1);@p0 = 1 [Type: Int32 (0)], @p1 = 3 [Type: Int32 (0)]
+
+
+2012-08-31 15:13:53,015 [27] NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(:0) - ExecuteBatch for 2 statements took 7 ms
+
+2012-08-31 15:13:53,015 [27] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:53,016 [27] NHibernate.AdoNet.AbstractBatcher.CloseCommand(:0) - skipping aggressive-release due to flush cycle
+
+2012-08-31 15:13:53,016 [27] NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(:0) - registering flush end
+
+2012-08-31 15:13:53,017 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:53,018 [27] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+
+2012-08-31 15:13:53,024 [27] NHibernate.Event.Default.AbstractFlushingEventListener.PostFlush(:0) - post flush
+
+2012-08-31 15:13:53,025 [27] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:53,026 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:53,026 [27] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - resolved object in session cache: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:53,026 [27] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+
+2012-08-31 15:13:53,026 [27] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+
+2012-08-31 15:13:53,026 [27] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:53,029 [27] NHibernate.Impl.SessionImpl.Close(:0) - closing session
+
+2012-08-31 15:13:53,029 [27] NHibernate.AdoNet.AbstractBatcher.Dispose(:0) - running BatcherImpl.Dispose(true)
+
+2012-08-31 15:13:54,824 [5] NHibernate.Impl.SessionImpl..ctor(:0) - [session-id=80b8525c-719d-4baf-94d0-532ae133ac33] opened session at timestamp: 634820228348, for session factory: [/829894500abb47b4b98f3218d4f5d4c4]
+
+2012-08-31 15:13:54,825 [5] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,825 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,826 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - object not resolved in any cache: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,826 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Load(:0) - Fetching entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,826 [5] NHibernate.Loader.Loader.LoadEntity(:0) - loading entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,826 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:54,827 [5] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=?
+
+2012-08-31 15:13:54,827 [5] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:54,827 [5] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=@p0
+
+2012-08-31 15:13:54,828 [5] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT basket0_.BasketId as BasketId0_0_ FROM Baskets basket0_ WHERE basket0_.BasketId=@p0;@p0 = 1 [Type: Int32 (0)]
+
+2012-08-31 15:13:54,828 [5] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+
+2012-08-31 15:13:54,829 [5] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+
+2012-08-31 15:13:54,830 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+
+2012-08-31 15:13:54,830 [5] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+
+2012-08-31 15:13:54,830 [5] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+
+2012-08-31 15:13:54,830 [5] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,830 [5] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,831 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,831 [5] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (1 rows)
+
+2012-08-31 15:13:54,831 [5] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+
+2012-08-31 15:13:54,831 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+
+2012-08-31 15:13:54,831 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 2 ms
+
+2012-08-31 15:13:54,832 [5] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:54,832 [5] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:54,832 [5] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+
+2012-08-31 15:13:54,832 [5] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 1
+
+2012-08-31 15:13:54,832 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,832 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollection(:0) - creating collection wrapper:[SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,832 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Basket#1]
+
+2012-08-31 15:13:54,833 [5] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+
+2012-08-31 15:13:54,833 [5] NHibernate.Loader.Loader.LoadEntity(:0) - done entity load
+
+2012-08-31 15:13:54,833 [5] NHibernate.Impl.AbstractSessionImpl.AfterOperation(:0) - after autocommit
+
+2012-08-31 15:13:54,833 [5] NHibernate.Impl.SessionImpl.AfterTransactionCompletion(:0) - transaction completion
+
+2012-08-31 15:13:54,833 [5] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:54,833 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - initializing collection [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,833 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - checking second-level cache
+
+2012-08-31 15:13:54,834 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - collection not cached
+
+2012-08-31 15:13:54,834 [5] NHibernate.Loader.Loader.LoadCollection(:0) - loading collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,834 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenPreparedCommand(:0) - Opened new IDbCommand, open IDbCommands: 1
+
+2012-08-31 15:13:54,834 [5] NHibernate.AdoNet.AbstractBatcher.PrepareQueryCommand(:0) - Building an IDbCommand object for the SqlString: SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=?
+
+2012-08-31 15:13:54,834 [5] NHibernate.Type.NullableType.NullSafeSet(:0) - binding '1' to parameter: 0
+
+2012-08-31 15:13:54,834 [5] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=@p0
+
+2012-08-31 15:13:54,835 [5] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT tracks0_.BasketId as BasketId1_, tracks0_.TrackId as TrackId1_, track1_.TrackId as TrackId3_0_, track1_.Name as Name3_0_, track1_.Description as Descript3_3_0_ FROM TrackToBasket tracks0_ left outer join Tracks track1_ on tracks0_.TrackId=track1_.TrackId WHERE tracks0_.BasketId=@p0;@p0 = 1 [Type: Int32 (0)]
+
+2012-08-31 15:13:54,835 [5] NHibernate.Connection.DriverConnectionProvider.GetConnection(:0) - Obtaining IDbConnection from Driver
+
+2012-08-31 15:13:54,835 [5] NHibernate.AdoNet.AbstractBatcher.ExecuteReader(:0) - ExecuteReader took 0 ms
+
+2012-08-31 15:13:54,836 [5] NHibernate.AdoNet.AbstractBatcher.LogOpenReader(:0) - Opened IDataReader, open IDataReaders: 1
+
+2012-08-31 15:13:54,836 [5] NHibernate.Loader.Loader.HandleEmptyCollections(:0) - result set contains (possibly empty) collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,836 [5] NHibernate.Engine.Loading.LoadContexts.GetCollectionLoadContext(:0) - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+
+2012-08-31 15:13:54,836 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
+
+2012-08-31 15:13:54,836 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - collection not yet initialized; initializing
+
+2012-08-31 15:13:54,836 [5] NHibernate.Loader.Loader.DoQuery(:0) - processing result set
+
+2012-08-31 15:13:54,836 [5] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 0
+
+2012-08-31 15:13:54,836 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: TrackId3_0_
+
+2012-08-31 15:13:54,837 [5] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,837 [5] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,837 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,837 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'name 1' as column: Name3_0_
+
+2012-08-31 15:13:54,837 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'desc 1' as column: Descript3_3_0_
+
+2012-08-31 15:13:54,837 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: BasketId1_
+
+2012-08-31 15:13:54,838 [5] NHibernate.Loader.Loader.ReadCollectionElement(:0) - found row of collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,838 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
+
+2012-08-31 15:13:54,838 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
+
+2012-08-31 15:13:54,838 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
+
+2012-08-31 15:13:54,838 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - found loading collection bound to current result set processing; reading row
+
+2012-08-31 15:13:54,838 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: TrackId1_
+
+2012-08-31 15:13:54,838 [5] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - resolved object in session cache: [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Loader.Loader.DoQuery(:0) - result set row: 1
+
+2012-08-31 15:13:54,839 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '3' as column: TrackId3_0_
+
+2012-08-31 15:13:54,839 [5] NHibernate.Loader.Loader.GetRow(:0) - result row: EntityKey[SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Loader.Loader.LoadFromResultSet(:0) - Initializing object from DataReader: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(:0) - Hydrating entity: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'name 3' as column: Name3_0_
+
+2012-08-31 15:13:54,839 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning 'desc 3' as column: Descript3_3_0_
+
+2012-08-31 15:13:54,839 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '1' as column: BasketId1_
+
+2012-08-31 15:13:54,839 [5] NHibernate.Loader.Loader.ReadCollectionElement(:0) - found row of collection: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - starting attempt to find loading collection [[SharpRestFulie.Domain.Basket.Tracks#1]]
+
+2012-08-31 15:13:54,839 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
+
+2012-08-31 15:13:54,839 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
+
+2012-08-31 15:13:54,840 [5] NHibernate.Engine.Loading.CollectionLoadContext.GetLoadingCollection(:0) - found loading collection bound to current result set processing; reading row
+
+2012-08-31 15:13:54,840 [5] NHibernate.Type.NullableType.NullSafeGet(:0) - returning '3' as column: TrackId1_
+
+2012-08-31 15:13:54,840 [5] NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(:0) - loading entity: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,840 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - attempting to resolve: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,840 [5] NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(:0) - resolved object in session cache: [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,840 [5] NHibernate.Loader.Loader.DoQuery(:0) - done processing result set (2 rows)
+
+2012-08-31 15:13:54,840 [5] NHibernate.Driver.NHybridDataReader.Dispose(:0) - running NHybridDataReader.Dispose()
+
+2012-08-31 15:13:54,841 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - Closed IDataReader, open IDataReaders :0
+
+2012-08-31 15:13:54,841 [5] NHibernate.AdoNet.AbstractBatcher.CloseReader(:0) - DataReader was closed after 6 ms
+
+2012-08-31 15:13:54,841 [5] NHibernate.AdoNet.AbstractBatcher.LogClosePreparedCommand(:0) - Closed IDbCommand, open IDbCommands: 0
+
+2012-08-31 15:13:54,841 [5] NHibernate.AdoNet.ConnectionManager.AggressiveRelease(:0) - aggressively releasing database connection
+
+2012-08-31 15:13:54,841 [5] NHibernate.Connection.ConnectionProvider.CloseConnection(:0) - Closing connection
+
+2012-08-31 15:13:54,841 [5] NHibernate.Loader.Loader.InitializeEntitiesAndCollections(:0) - total objects hydrated: 2
+
+2012-08-31 15:13:54,841 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Track#1]
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - resolving associations for [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.TwoPhaseLoad.InitializeEntity(:0) - done materializing entity [SharpRestFulie.Domain.Track#3]
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - attempting to locate loading collection entry [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] in any result-set context
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.Loading.LoadContexts.LocateLoadingCollectionEntry(:0) - collection [CollectionKey[SharpRestFulie.Domain.Basket.Tracks#1]] not located in load context
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[SharpRestFulie.Domain.Basket.Tracks#1]>@140bd52]
+
+2012-08-31 15:13:54,842 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - 1 collections were found in result set for role: SharpRestFulie.Domain.Basket.Tracks
+
+2012-08-31 15:13:54,843 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollection(:0) - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[SharpRestFulie.Domain.Basket.Tracks#1]>@140bd52]
+
+2012-08-31 15:13:54,843 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollection(:0) - collection fully initialized: [SharpRestFulie.Domain.Basket.Tracks#1]
+
+2012-08-31 15:13:54,843 [5] NHibernate.Engine.Loading.CollectionLoadContext.EndLoadingCollections(:0) - 1 collections initialized for role: SharpRestFulie.Domain.Basket.Tracks
+
+2012-08-31 15:13:54,843 [5] NHibernate.Engine.StatefulPersistenceContext.InitializeNonLazyCollections(:0) - initializing non-lazy collections
+
+2012-08-31 15:13:54,843 [5] NHibernate.Loader.Loader.LoadCollection(:0) - done loading collection
+
+2012-08-31 15:13:54,843 [5] NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(:0) - collection initialized
+
+2012-08-31 15:13:54,844 [5] NHibernate.Impl.SessionImpl.Close(:0) - closing session
+
+2012-08-31 15:13:54,844 [5] NHibernate.AdoNet.AbstractBatcher.Dispose(:0) - running BatcherImpl.Dispose(true)
 
