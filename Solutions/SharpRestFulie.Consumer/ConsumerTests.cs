@@ -21,20 +21,28 @@ namespace SharpRestFulie.Consumer
 				basket = Restfulie.At("http://sharprestfulie.local/baskets").Accepts("application/json").Create(string.Empty);
 			}
 
+
+			/*
+			 * This proof of concept can be summed up as follows: 
+				 * 1) Analyse;
+				 * 2) Verify Expectations;
+				 * 3) Follow Expectations (if verified).
+			 */
 			var i = 0;
-			while (basket.Link["SubmitPayment"] == null)
+			while (basket.Link["SubmitPaymentPost"] == null)
 			{
-				if (i > tracks.Length)
+				if (i >= tracks.Length)
 				{
 					i = 0;
 				}
 
-				tracks[i].AddToBasket(basket.Id);
+				tracks[i].AddToBasketPost(basket.Id);
 				i++;
 			}
 
-			var receipt = basket.SubmitPayment();
-			Assert.That(receipt.TotalPaid, Is.EqualTo(20.0));
+
+			var payment = basket.SubmitPaymentPost();
+			Assert.That(payment.Reference, Is.EqualTo(1));
 		}
 	}
 }

@@ -39,7 +39,7 @@ namespace SharpRestFulie.Web.Mvc.Controllers
 
 				paymentResource = new PaymentResource()
 				                  	{
-				                  		TotalPaid = 20.0 //proofs of concept... ... ... are time limited...
+				                  		Reference = 1 //proofs of concept... ... ... are time limited...
 				                  	};
 			}
 			catch (Exception exception)

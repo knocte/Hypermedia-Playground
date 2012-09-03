@@ -17,7 +17,7 @@ namespace SharpRestFulie.Web.Mvc.Controllers.Resources
 		public void SetRelations(Relations relations)
 		{
 			relations.Named("self").Uses<TracksController>().Get(_id);
-			relations.Named("AddToBasket").At("http://sharprestfulie.local/Baskets/{BasketId}/Add");
+			relations.Named("AddToBasketPost").At("http://sharprestfulie.local/Baskets/{BasketId}/Add");
 
 			relations.Named("list").Uses<TracksController>().Index();
 		}
